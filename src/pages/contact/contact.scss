@@ -1,3 +1,29 @@
 page-contact {
 
+    ion-card {
+    text-align: left;
+  }
+
+  .card-header {
+    width: 100%;
+    font-weight: bold;
+    color: primary;
+  }
+
+  .ion-md-call {
+    color: primary !important;
+  }
+
+  .ion-ios-time {
+    color: primary !important;
+  }
+
+  .flex-right {
+      justify-content: flex-end;
+  }
+
+  .button:before{
+      margin: 0 5px;
+  }
+
 }
