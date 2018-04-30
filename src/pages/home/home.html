@@ -20,6 +20,9 @@
 </ion-fab>
 
 <ion-content>
+  <ion-grid>
+  <ion-row align-items-center>
+  <ion-col col-12 col-lg-4>
   <ion-card *ngIf="dish">
     <img src="{{BaseURL + dish.image}}"/>
     <ion-card-content>
@@ -31,6 +34,7 @@
       </p>
     </ion-card-content>
   </ion-card>
+  </ion-col>
   <div [hidden]="dish || dishErrMess">
     <ion-spinner></ion-spinner>
     <h4>Loading . . . Please Wait</h4>
@@ -39,7 +43,8 @@
     <h2>Error</h2>
     <h4>{{dishErrMess}}</h4>
   </div>
-    
+
+  <ion-col col-12 col-lg-4>
   <ion-card *ngIf="promotion">
     <img src="{{BaseURL + promotion.image}}"/>
     <ion-card-content>
@@ -51,6 +56,7 @@
       </p>
     </ion-card-content>
   </ion-card>
+  </ion-col>
   <div [hidden]="promotion || promoErrMess">
     <ion-spinner></ion-spinner>
     <h4>Loading . . . Please Wait</h4>
@@ -60,6 +66,7 @@
     <h4>{{promoErrMess}}</h4>
   </div>
   
+  <ion-col col-12 col-lg-4>
   <ion-card *ngIf="leader">
     <img src="{{BaseURL + leader.image}}"/>
     <ion-card-content>
@@ -74,6 +81,7 @@
       </p>
     </ion-card-content>
   </ion-card>
+  </ion-col>
   <div [hidden]="leader || leaderErrMess">
     <ion-spinner></ion-spinner>
     <h4>Loading . . . Please Wait</h4>
@@ -82,4 +90,6 @@
     <h2>Error</h2>
     <h4>{{leaderErrMess}}</h4>
   </div>
+  </ion-row>
+  </ion-grid>
   </ion-content>
