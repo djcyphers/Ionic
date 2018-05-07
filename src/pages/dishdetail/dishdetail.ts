@@ -5,6 +5,7 @@ import { Comment } from '../../shared/comment';
 import { CommentPage } from '../../pages/comment/comment';
 import { FavoriteProvider } from '../../providers/favorite/favorite';
 import { ActionSheetController } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the DishdetailPage page.
