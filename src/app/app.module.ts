@@ -26,6 +26,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { baseURL } from '../shared/baseurl';
 import { FavoriteProvider } from '../providers/favorite/favorite';
 import { EmailComposer } from '@ionic-native/email-composer';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 
 @NgModule({
@@ -71,7 +72,8 @@ import { EmailComposer } from '@ionic-native/email-composer';
     ProcessHttpmsgProvider,
     FavoriteProvider,
     LocalNotifications,
-    EmailComposer
+    EmailComposer,
+    SocialSharing
   ]
 })
 export class AppModule {}
